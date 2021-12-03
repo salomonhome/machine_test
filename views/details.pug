@@ -1,0 +1,25 @@
+doctype html
+include navbar
+h2 User Details
+if message !=''
+    p #{message}
+div
+  label(for='fname') First name:
+  p#fname #{user.fname}
+  br
+  label(for='lname') Last name:
+  p#lname #{user.lname}
+  br
+  label(for='email') Email:
+  p#email #{user.email}
+  br
+  br
+  label(for='phone') Phone:
+  p#phone #{user.phone}
+  br
+  label(for='experience') Experience :
+  p#experience #{user.experience}
+  br
+  label(for='achievements') Achievements :
+  p#achievements #{user.achievements}
+  br

@@ -1,0 +1,24 @@
+doctype html
+head 
+    style.
+        table, th, td {
+        border:1px solid black;
+        }
+include navbar
+h2 User List
+if message !=''
+    p #{message}
+table(style='width:100%')
+  thead
+    tr
+        th Name
+        th Email
+        th Action
+  each user in users
+    tr
+        td=user.fname+' '+user.lname
+        td=user.email
+        td
+          a(href='/user/'+user._id)  Show More
+
+
